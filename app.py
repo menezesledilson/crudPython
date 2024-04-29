@@ -2,13 +2,31 @@ from flask import Flask, render_template, request, redirect, url_for, flash
 import galaxias_BD
 
 app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] = 'img'
 
+
+#rota para capa.html template principal
 @app.route('/')
+@app.route('/capa.html')
+def capa():
+    return render_template('capa.html')
+
+
+
 #rota para index.html
 @app.route('/index.html')
 def home():
     galaxias = galaxias_BD.listar_galaxias()
     return render_template('index.html', dados=galaxias)
+
+@app.route('/galeria')
+def galeria():
+    return render_template('galeria.html')
+
+#rota para o video
+@app.route('/video')
+def video():
+    return render_template('video.html')
 
 @app.route('/sobreNos')
 def sobreNos():

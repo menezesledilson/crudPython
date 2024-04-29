@@ -1,0 +1,119 @@
+html {
+    border: 0;
+}
+
+header {
+ margin:0;
+}
+
+img {
+    max-width: 100%;
+    height: 50px;
+}
+
+/* Alinhamento dos botões à esquerda */
+.navbar-nav {
+    margin-right: auto;
+    height: 0px;
+}
+.navbar{
+    content: 1px;
+    height: 60px;
+}
+
+.navbar-nav .nav-item {
+   margin-right: 10px;
+   margin-top: 40px;
+}
+
+/* Adicionando borda aos botões */
+.nav-link {
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.EditarH1{
+    margin-top: 50px;
+}
+.container {
+    flex: 1;
+    margin-bottom: 120px;
+}
+
+/* Estilo para o footer */
+footer {
+    position: relative; /* Alterado para relativo */
+    width: 100%; /* Largura total */
+    height: 120px; /* Altura do footer */
+    background-color: #343a40; /* Cor de fundo do footer */
+    color: white; /* Cor do texto */
+    bottom: 0; /* Alinhar o footer na parte inferior */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.FooterImagens {
+    display: inline;
+    margin: 10px;
+    margin-left: 40px;
+    margin-top: 20px;
+    line-height: 0.5rem;
+}
+
+.FooterTitulo {
+    display: inherit;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    border-bottom: #FFF 1px solid;
+    height: 50%;
+    margin-top: 5%;
+}
+
+.FooterLinks {
+    position: absolute; /* Posiciona em relação ao footer */
+    right: 40px; /* Distância da direita */
+    bottom: 18px; /* Alinha na parte inferior do footer */
+    display: flex;
+    flex-direction: column; /* Alinha os elementos em coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    gap: 4px; /* Espaçamento entre os elementos */
+}
+
+.FooterLinks p {
+    margin-bottom: 2px; /* Remove a margem padrão do parágrafo */
+}
+
+.FooterLinks a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #e7e5c1
+}
+
+.Pfooter {
+    margin: 0;
+    display: inline;
+}
+/* Adicionando borda aos botões */
+.nav-link {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 15px; /* Aumenta o padding */
+    transition: background-color 0.3s ease; /* Adiciona transição para a cor de fundo */
+  }
+  
+.nav-link:hover {
+    background-color: #1e2227; /* Cor azul escura no hover */
+    color: #fff; /* Cor do texto no hover */
+  }
+  
+.card-title {
+    background-color: #6c757d !important;
+    color: #fff;
+}
+.card-body {
+    border: 2px solid #1e2227; /* Cor da borda */
+    border-radius: 10px; /* Raio da borda para torná-la mais arredondada */
+    padding: 20px; /* Espaçamento interno para o conteúdo não ficar muito próximo da borda */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+}
