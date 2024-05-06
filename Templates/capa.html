@@ -63,15 +63,22 @@
             cursor: pointer;
         }
 
-        */
-        /* Turn off parallax scrolling for tablets and phones */
-        @media only screen and (max-device-width: 1600px) {
+        /* Estilos para tablets */
+        @media only screen and (max-width: 768px) {
+            /* Ajustes para o texto central */
+            .w3-display-middle {
+                margin-top: 100px;
+            }
 
-            .bgimg-1,
-            .bgimg-2,
-            .bgimg-3 {
-                background-attachment: scroll;
-                min-height: 400px;
+            /* Ajustes para os botões */
+            .w3-padding-large {
+                margin-top: 50px;
+            }
+
+            /* Ajustes para o tamanho dos botões */
+            .w3-button {
+                padding: 10px 20px;
+                font-size: 14px;
             }
         }
     </style>

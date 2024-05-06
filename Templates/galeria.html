@@ -1,4 +1,4 @@
-
+{% include 'headerSobreNos.html' %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -41,24 +41,20 @@
 .galaxia:hover .text-below {
     opacity: 1;
 }
+
+/* Estilos para tablets */
+@media only screen and (max-width: 768px) {
+    .galaxia {
+        height: 150px; /* Reduz a altura para melhor ajuste em tablets */
+    }
+    .text-below {
+        padding: 5px; /* Reduz o padding para melhor ajuste em tablets */
+    }
+}
 </style>
 </head>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link font-weight-bold" href="/">INÍCIO <span class="sr-only">(current)</span></a>
-                    </li>
-                
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="/video">DOCUMENTÁRIO</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+     
 </header>
 <body>
 <div class="container">
@@ -69,10 +65,7 @@
                 <div class="col-md-4">
                     <div class="galaxia">
                         <img src="https://s2.static.brasilescola.uol.com.br/be/2022/05/via-lactea.jpg" alt="Via Láctea" class="img-fluid">
-                        <div class="text-below">Via Láctea - A Via Láctea é mais do que apenas uma faixa brilhante no céu noturno; é o lar da nossa galáxia. 
-
-
-                        </div>
+                        <div class="text-below">Via Láctea - A Via Láctea é mais do que apenas uma faixa brilhante no céu noturno; é o lar da nossa galáxia.</div>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -94,4 +87,5 @@
 
 
 </body>
+
 </html>

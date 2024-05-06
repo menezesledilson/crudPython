@@ -1,3 +1,4 @@
+{% include 'headerCadastar.html' %}
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -8,12 +9,29 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Link para o CSS personalizado -->
     <link rel="stylesheet" href="{{url_for('static', filename='CSS/style.css')}}">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+        /* Estilos para tablets */
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            .card {
+                margin-top: 20px; /* Espaçamento superior */
+                padding: 20px; /* Espaçamento interno */
+            }
+            .form-group label {
+                font-size: 16px; /* Tamanho da fonte dos rótulos */
+            }
+            .form-control {
+                font-size: 16px; /* Tamanho da fonte dos inputs */
+            }
+            .btn-primary, .btn-secondary {
+                width: 100%; /* Botões ocupam a largura total */
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Inclui o header -->
-    {% include 'header.html' %}
+  
     <div class="container mt-4">
         <div class="card">
             <div class="card-body">

@@ -1,4 +1,4 @@
-{% include 'header.html' %}
+{% include 'headerCadastar.html' %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,27 +9,29 @@
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <style>
         body {
-            background-color: black;
-            color: black;
+            background-color: #f8f9fa; /* Cor de fundo para o corpo do documento */
+            color: #343a40; /* Cor do texto principal */
         }
 
         .form-group label {
-            color: white;
+            color: #343a40; /* Cor do texto das labels dos inputs */
         }
 
         .footer {
-            background-color: black;
-            color: white;
+            background-color: #343a40; /* Cor de fundo do footer */
+            color: white; /* Cor do texto do footer */
             text-align: center;
-            padding: -5px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
+            padding: 10px;
+       
 
-        /* Adicionando a classe para o título */
-        .text-white {
-            color: white;
+        /* Estilos para tablets */
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            .form-control {
+                font-size: 16px; /* Tamanho da fonte dos inputs */
+            }
+            .btn-primary {
+                width: 100%; /* Botão de enviar ocupa a largura total */
+            }
         }
     </style>
 </head>
@@ -54,11 +56,6 @@
                  <!-- Botão de enviar fora da div .form-group -->
                <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Enviar</button>
             </div>
-          <!-- Footer -->
-         <div class="footer">
-        <p>Produzido por Hubble</p>
-        </div>
-    
         </form>
     </div>
     <!-- Footer -->
@@ -89,10 +86,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
     <script>

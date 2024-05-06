@@ -43,7 +43,7 @@ img {
 
 /* Estilo para o footer */
 footer {
-    position: relative; /* Alterado para relativo */
+    position: absolute; 
     width: 100%; /* Largura total */
     height: 120px; /* Altura do footer */
     background-color: #343a40; /* Cor de fundo do footer */
@@ -116,4 +116,97 @@ footer {
     border-radius: 10px; /* Raio da borda para torná-la mais arredondada */
     padding: 20px; /* Espaçamento interno para o conteúdo não ficar muito próximo da borda */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+}
+
+/* Estilos Iniciais para Dispositivos Móveis (Mobile First) */
+
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Define um tamanho de fonte padrão */
+    line-height: 1.6; /* Define uma altura de linha padrão */
+    margin: 0;
+    padding: 0;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 1rem; /* Adiciona um espaçamento padrão abaixo dos títulos */
+}
+
+/* Layout Responsivo */
+.container {
+    width: 100%; /* Ocupa toda a largura do viewport */
+    padding: 0 15px; /* Adiciona um pequeno espaço nas laterais */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Espaçamento Vertical */
+.mt-1 {
+    margin-top: 0.25rem;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+/* Espaçamento Horizontal */
+.mx-1 {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+.mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.mx-3 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Espaçamento em Todos os Lados */
+.m-1 {
+    margin: 0.25rem;
+}
+
+.m-2 {
+    margin: 0.5rem;
+}
+
+.m-3 {
+    margin: 1rem;
+}
+
+/* Estilos para telas maiores (desktops) */
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 18px; /* Aumentar o tamanho da fonte */
+    }
+
+    /* Adicione aqui estilos específicos para telas maiores, se necessário */
+}
+
+/* Estilos para telas menores (dispositivos móveis) */
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 14px; /* Reduzir o tamanho da fonte */
+    }
+
+    /* Adicione aqui estilos específicos para telas menores, se necessário */
+}
+
+/* Estilos para telas muito pequenas (ex: smartphones em modo paisagem) */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 12px; /* Reduzir ainda mais o tamanho da fonte */
+    }
+
+    /* Adicione aqui estilos específicos para telas muito pequenas, se necessário */
 }

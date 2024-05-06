@@ -1,3 +1,4 @@
+{% include 'headerSobreNos.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -104,10 +105,23 @@ body {
   background: #ddd;
 }
 
+/* Centralizar o vídeo */
+.main iframe {
+  display: block;
+  margin: 0 auto;
+}
+
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row {   
     flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is between 401px and 700px wide, adjust the navigation links */
+@media screen and (min-width: 401px) and (max-width: 700px) {
+  .navbar a {
+    padding: 8px 16px; /* Ajusta o espaçamento dos links */
   }
 }
 
@@ -118,21 +132,11 @@ body {
     width: 100%;
   }
 }
-
-/* Centralizar o vídeo */
-.main iframe {
-  display: block;
-  margin: 0 auto;
-}
 </style>
 </head>
 <body>
   
-<div class="navbar">
-  <a href="/" class="active">Home</a>
-  <a href="/galeria">GALERIA</a>
- </div>
-
+ 
 
 <div class="header">
     <h1>Hubble Software house</h1>
