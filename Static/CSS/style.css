@@ -70,7 +70,7 @@ footer {
 }
 
 .FooterLinks {
-    position: absolute; /* Posiciona em relação ao footer */
+    position:static; /* Posiciona em relação ao footer */
     right: 40px; /* Distância da direita */
     bottom: 18px; /* Alinha na parte inferior do footer */
     display: flex;
@@ -189,7 +189,9 @@ h1, h2, h3 {
     body {
         font-size: 18px; /* Aumentar o tamanho da fonte */
     }
-
+    .footer{
+        position: fixed;
+    }
     /* Adicione aqui estilos específicos para telas maiores, se necessário */
 }
 
@@ -198,7 +200,7 @@ h1, h2, h3 {
     body {
         font-size: 14px; /* Reduzir o tamanho da fonte */
     }
-
+    
     /* Adicione aqui estilos específicos para telas menores, se necessário */
 }
 
@@ -206,6 +208,12 @@ h1, h2, h3 {
 @media only screen and (max-width: 480px) {
     body {
         font-size: 12px; /* Reduzir ainda mais o tamanho da fonte */
+    }
+    .footer{
+        position: fixed;
+    }
+    .FooterImagens img{
+        height: 20px;
     }
 
     /* Adicione aqui estilos específicos para telas muito pequenas, se necessário */
