@@ -1,0 +1,40 @@
+# 1. Autenticar no Google Cloud
+# Já realizado com gcloud auth login.
+
+# 2. Selecionar o Projeto
+gcloud config set project SEU_PROJECT_ID
+# caso precise mudar para outro projeto
+gcloud config set project koru-docker2
+
+# 3. Ativar a API do Google Container Registry
+gcloud services enable containerregistry.googleapis.com
+
+# 4. Taguear a Imagem Docker
+# Tagueie sua imagem Docker local com o caminho do GCR e versão desejada.
+
+docker tag dc-python2:latest gcr.io/koru-docker/dc-python2:v1.0
+
+# 5. Autenticar o Docker no GCR
+gcloud auth configure-docker
+
+# 6. Enviar a Imagem para o GCR
+docker push gcr.io/koru-docker/dc-python2:v1.0
+
+# 7. Verificar a Imagem no GCR
+# Acesse o Console do Google Cloud e vá para Container Registry para verificar.
+
+# 8. Cloud Run 
+# Criar serviço + selecionar url imagem do container +  
+ARTIFACT REGISTRY + selecione a imagem + clicar em selecionar
+
+# 9. Autenticação
+# marcar Permitir chamadas não autenticadas
+
+#10.Contêineres, volumes, rede, segurança
+# mudar a porta 8080 para 5000 
+# Clicar no botão Criar
+
+# Exemplo Completo:
+# Aqui está um exemplo resumido de como enviar uma imagem para o GCR.
+
+
