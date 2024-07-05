@@ -1,3 +1,11 @@
+Criar a imagem Docker
+docker build -t dc-python .
+
+Criar container 
+docker run -d -p 5000:5000 --name dc-python-container dc-python
+
+Através do sdk google instalado no pc
+
 # 1. Autenticar no Google Cloud
 # Já realizado com gcloud auth login.
 
